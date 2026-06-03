@@ -1,0 +1,25 @@
+{
+  "name": "bole-materials-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch index.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "drizzle-orm": "^0.30.0",
+    "express": "^4.19.2",
+    "pino": "^9.1.0",
+    "pino-http": "^10.1.0",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5"
+  }
+}
