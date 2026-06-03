@@ -1,14 +1,14 @@
 import { Telegraf, Markup } from "telegraf";
-import { logger } from "./lib/logger";
-import { setBotState } from "./bot-state";
+import { logger } from "./lib/logger.js";
+import { setBotState } from "./bot-state.js";
 import {
   flows,
   SELLER_ACTIONS,
   getSession,
   setSession,
   clearSession,
-} from "./bot-sessions";
-import { db, listingsTable } from "@workspace/db";
+} from "./bot-sessions.js";
+import { db, listingsTable } from "./db/index.js";
 import { desc, eq, and } from "drizzle-orm";
 
 function escMd(text: string): string {
